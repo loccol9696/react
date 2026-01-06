@@ -1,0 +1,8 @@
+1. Giới thiệu về Module
+- Một module là 1 file chứa mã JavaScript (JS) mà bạn có thể tái sử dụng ở các file khác
+- Giúp chia nhỏ ứng dụng thành các phần nhỏ, dễ quản lý và bảo trì
+- Trong JavaScript, export được sử dụng để chỉa sẻ các hàm, biến, class từ một module. Có hai cách chính để export
+    + Named export: cho phép export nhiều phần tử từ 1 file
+    + Default export: mỗi module chỉ có 1 default export
+
+Lưu ý: Nếu file named.js có 1 default export, nó sẽ không được gộp vào đối tượng name khi sử dụng import * as
