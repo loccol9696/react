@@ -1,0 +1,25 @@
+1. Tổng quan React
+- React là một thư viện Javascript dùng để xây dựng giao diện người dùng (UI - User Interface)
+- React được Facebook phát triển, và được họ sử dụng vào các sản phẩm của họ như Facebook, Instagram
+- Một số trang nổi tiếng đang sử dụng React: Netflix, shopee, tiktok, lazada
+
+2. React có gì khác biệt?
+- Người ta thấy rằng, trên 1 trang web có nhiều phần lặp lại, nên họ đưa ra ý tưởng chia bố cục trang web thành các thành phần nhỏ hơn (Component)
+- Các khổi Component này sẽ là 1 khối mã hoàn chỉnh bao gồm: HTML - CSS - Javascript
+- Và bạn có thể tạo bao nhiêu component này tùy thích, khi sử dụng chúng ta chỉ cần update lại nội dung cho từng component
+- Điều này mang lại tác dụng vô cùng to lớn với trải nghiệm người dùng
+- Ví dụ khi bạn đang dùng facebook, sau đó có tin nhắn đến, React sẽ giúp chúng ta chỉ cập nhật lại component Message để hiển thị lại số lượng tin nhắn chưa được đọc, còn các thành phần khác không bị ảnh hướng
+- Hoặc nếu chia nhỏ các thành phần, ví dụ:
+    + Bài đăng -> Component
+    + Comment -> Component
+- Nếu có 1 bài đăng mới hoặc 1 bình luận mới, thì chỉ có bài đăng đó được tự cập nhật, mà không ảnh hưởng đến các thành phần khác, không phải load lại toàn bộ trang web
+
+3. React update component thế nào?
+- Virtual DOM (Document Object Model ảo) là một bản sao của DOM thật
+- Nó không được hiển thị trực tiếp trên trình duyệt mà chỉ tồn tại trong bộ nhớ của ứng dụng
+    1. Render lần đầu: React tạo 1 bản Virtual DOM và hiển thị giao diện
+    2. Update virtual DOM: Khi có thay đổi trong state hoặc props, React tạo một Virtual DOM mới
+    3. Diffing Algorithm: So sánh giữa Virtual DOM cũ và mới để xác định sự khác biệt
+    4. Cập nhật DOM thật: Chỉ những phần thay đổi được áp dụng vào DOM thật
+
+    
